@@ -1706,7 +1706,6 @@ BCW_API const std::string decode_mnemonic(const string_list& words)
     std::ostringstream ss;
     ss << std::hex;
     auto words_end = words.end() - words.size() % 3;
-    std::cout << std::endl;
     for (auto it = words.begin(); it != words_end; it += 3)
     {
         const int n = (int)common_words.size();
